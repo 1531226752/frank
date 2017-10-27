@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta name="Keywords" content="SuperSlide,jQuery图片无缝滚动特效,javascript图片无缝滚动特效">
+		<meta name="Description" content="SuperSlide 致力于解决网站大部分特效展示问题，使网站代码规范整洁，方便维护更新。网站上常用的“焦点图/幻灯片”、“Tab标签切换”、“图片滚动”、“无缝滚动”等等只需要一个SuperSlide即可解决！还可以多个SuperSlide组合创造更多效果">
+		<title>SuperSlide - 图片无缝滚动特效-左</title>
+		<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	</head>
+
+	<body>
+
+		<style type="text/css">
+			/* css 重置 */
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			body {
+				background: #fff;
+				/*font: normal 12px/22px 宋体;*/
+			}
+			
+			img {
+				border: 0;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+			/* 本例子css */
+			
+			.picMarquee-left {
+				width: 1090px;
+				overflow: hidden;
+				position: relative;
+				/*border: 1px solid #ccc;*/
+				margin: 0 auto;
+				background: #f4f0ea;
+				padding: 60px;
+			}
+			
+			.picMarquee-left .hd {
+				overflow: hidden;
+				/*background-color: #f5f5f5;*/
+				width: 1090px;
+				/*padding-left: 22px;
+				line-height: 44px;
+				font-size: 17px;
+				height: 44px;
+				color: black;
+				background: #f4f4f4;
+				padding: 0 10px;*/
+			}
+			
+			.picMarquee-left .hd .prev,
+			.picMarquee-left .hd .next {
+				display: block;
+				width: 5px;
+				height: 9px;
+				float: right;
+				margin-right: 5px;
+				margin-top: 10px;
+				overflow: hidden;
+				cursor: pointer;
+				background: url("../images/arrow.png") no-repeat;
+			}
+			
+			.picMarquee-left .hd .next {
+				background-position: 0 -50px;
+			}
+			
+			.picMarquee-left .hd .prevStop {
+				background-position: -60px 0;
+			}
+			
+			.picMarquee-left .hd .nextStop {
+				background-position: -60px -50px;
+			}
+			
+			.picMarquee-left .bd {
+				text-align: center;
+				padding: 0 10px;
+			}
+			
+			.picMarquee-left .bd ul {
+				overflow: hidden;
+				zoom: 1;
+			}
+			
+			.picMarquee-left .bd ul li {
+				margin-right: 10px;
+				float: left;
+				_display: inline;
+				overflow: hidden;
+			}
+			
+			.picMarquee-left .bd ul li .title {
+				line-height: 24px;
+			}
+			
+			.tempWrap {
+				display: inline-block;
+			}
+			
+			.big_bg {
+				background: #f4f0ea;
+			}
+			
+			
+		</style>
+		<div class="big_bg">
+
+			<div class="picMarquee-left">
+				<div class="hd">
+					<div class="manufacturer_top_char">
+						<div class="manufacturer_top_left fl">
+							<h3 class="name fl">大家都在说</h3>
+							<span class="smallName fl">
+						生活，没有统一标准
+					</span>
+							<div class="clear"></div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+				</div>
+				<div class="bd">
+					<ul class="picList">
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/00024faabe2c701c647da2f0f93fb6d0.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>m****4</span>
+										<span class="we_char_left">2017-08-27 19:04</span>
+									</div>
+									<div class="we_char_middle relative">
+										<span class="we_name fl">棱面陶瓷凉水杯 250ml</span>
+										<span class="we_price fr">¥19.9</span>
+										<div class="clear"></div>
+									</div>
+									<div class="we_char_bottom">
+										杯子非常好看，颜色很正，放在家里喝水非常合适，如果家里其他家人还需要的话，我会继续购买的。
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/2fc22212ed6d33d6deee7793a27c5663.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>m****0</span>
+										<span class="we_char_left">2017-08-27 12:40</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">小龙虾 4-6钱/只 净虾850克</span>
+										<span class="we_price fr">¥75</span>
+									</div>
+									<div class="we_char_bottom">
+										很美味，很干净，很新鲜，已回购了两盒。
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/8a5dfd7b6995255e5e47742f70a11252.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>简****单</span>
+										<span class="we_char_left">2017-08-27 13:56</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">格纹棉质褶皱连衣裙（女童）</span>
+										<span class="we_price fr">¥159</span>
+									</div>
+									<div class="we_char_bottom">
+										质量很好，衣服也很漂亮
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/b9bfcca1ad3b845a47cd8ff1107553a5.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>行****</span>
+										<span class="we_char_left">2017-08-23 22:26</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">德式六件套不锈钢刀</span>
+										<span class="we_price fr">¥399</span>
+									</div>
+									<div class="we_char_bottom">
+										收到几天了，今天打开用，很锋利，真心不错👍
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/cea2cce7f722242de9de3f6332783c7c.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>李****影</span>
+										<span class="we_char_left">2017-08-26 22:20</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">日本制造 波子汽水组合装</span>
+										<span class="we_price fr">¥59</span>
+									</div>
+									<div class="we_char_bottom">
+										味道口感不错哦！包装和体验都很棒！高质量享受生活！这种饮料非常有趣，感兴趣的朋友可以体验一下！
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/e2feca858ec523a29751888d22ddc1d6.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>s****g</span>
+										<span class="we_char_left">2017-08-25 09:11</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">小猫跟轻蝶漆皮女鞋</span>
+										<span class="we_price fr">¥209</span>
+									</div>
+									<div class="we_char_bottom">
+										鞋很漂亮，不错不错
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/8dd414bf5a457ada52204388e6268bc9.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>西****</span>
+										<span class="we_char_left">2017-08-27 00:10</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">女式真丝印花睡袍</span>
+										<span class="we_price fr">¥399</span>
+									</div>
+									<div class="we_char_bottom">
+										质感非常好，老婆非常满意
+									</div>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="we relative">
+								<a href="http://you.163.com/"><img class="we_img" src="img/eefe725c268a25a939e233d513c17479.jpg" /></a>
+								<div class="absolute we_char">
+									<div class="we_char_top">
+										<span>m****8</span>
+										<span class="we_char_left">2017-08-26 22:24</span>
+									</div>
+									<div class="we_char_middle">
+										<span class="we_name fl">丝薄AB面羊毛围巾</span>
+										<span class="we_price fr">¥99</span>
+									</div>
+									<div class="we_char_bottom">
+										很喜欢，围巾很百搭，我已中了严选的毒，过几天就要上来看看有没有上新。
+									</div>
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			jQuery(".picMarquee-left").slide({
+				mainCell: ".bd ul",
+				autoPlay: true,
+				effect: "leftMarquee",
+				vis: 4,
+				interTime: 30
+			});
+		</script>
+
+	</body>
+
+</html>
+<!--<script type="text/javascript">
+	//百度统计代码
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa630f96b6a9dd549675d26373853f7f1' type='text/javascript'%3E%3C/script%3E"));
+</script>-->

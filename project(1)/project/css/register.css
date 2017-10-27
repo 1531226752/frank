@@ -1,0 +1,232 @@
+		@charset "utf-8";
+	.register_title {
+		font-size: 16px;
+		position: absolute;
+		top: 16px;
+		left: 730px;
+	}
+	
+	.register_title a {
+		text-decoration: none;
+		color: #ca5252;
+	}
+	
+	.register_bg {
+		background-color: #efefef;
+	}
+	
+	.register_tit {
+		margin-bottom: 40px;
+	}
+	
+	.register_box {
+		position: relative;
+		width: 900px;
+		height: 680px;
+		padding-top: 55px;
+		margin: 0 auto;
+		background-color: #fff;
+		border-radius: 6px;
+		box-shadow: 0 3px 3px #cbc9c9;
+		font-size: 16px;
+	}
+	
+	.register_content {
+		/*position: absolute;
+	top:20px;
+	left:195px;*/
+		width: 410px;
+		margin: 0 auto;
+	}
+	
+	.register_list .register_most input {
+		padding: 10px 15px;
+		display: inline-block;
+		margin-top: 20px;
+		width: 270px;
+		opacity: 0.8;
+		border: 1px solid lightgray;
+		outline: none;
+		font-size: 14px;
+		border-radius: 5px;
+	}
+	
+	.register_user {
+		height: 70px;
+		margin-left: 48px;
+	}
+	
+	.repass {
+		height: 70px;
+		margin-left: 16px;
+	}
+	
+	.register_phone {
+		height: 70px;
+		margin-left: 32px;
+	}
+	
+	#res_code {
+		padding: 10px 15px;
+		display: inline-block;
+		width: 100px;
+		opacity: 0.8;
+		border: 1px solid lightgray;
+		outline: none;
+		font-size: 14px;
+		border-radius: 5px;
+	}
+	
+	#code {
+		margin-left: 10px;
+		padding: 10px 15px;
+		display: inline-block;
+		width: 155px;
+		color: black;
+		border: 1px solid #efefef;
+		outline: none;
+		font-size: 14px;
+		border-radius: 5px;
+		background-color: lightgray;
+		cursor: pointer;
+	}
+	
+	#register {
+		padding: 14px 15px;
+		display: inline-block;
+		margin-bottom: 10px;
+		width: 300px;
+		color: white;
+		font-weight: 400;
+		outline: none;
+		font-size: 16px;
+		border-radius: 5px;
+		cursor: pointer;
+		border: 0;
+		background-color:  #ca5252;;
+	}
+	
+	.register_most {
+		margin-bottom: 90px;
+	}
+	
+	.reg_check {
+		width: 315px;
+		font-size: 12px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	.register_footer {
+		text-align: center;
+	}
+	.res_code{
+		height: 70px;
+		}
+	.reg_check a {
+		color: #526069;
+	}
+	
+	.reg_check a:hover {
+		color: black;
+	}
+	
+	#reg_check {
+		cursor: pointer;
+		width: 16px;
+		height: 16px;
+		vertical-align: text-top;
+	}
+	/*==========以下部分是Validform必须的===========*/
+	
+	.Validform_checktip {
+		margin-left: 20px;
+		margin-top: 26px;
+		height: 10px;
+		overflow: hidden;
+		color: #999;
+		font-size: 12px;
+	}
+	
+	.Validform_right {
+		font-size: 16px;
+		color: #71b83d;
+		width: 30%;
+		position: absolute;
+		height: 23px;
+		padding-left: 20px;
+		background: url(../img/right.png) no-repeat left center;
+	}
+	
+	.Validform_wrong {
+		font-size: 16px;
+		color: red;
+		padding-left: 20px;
+		width: 30%;
+		position: absolute;
+		height: 23px;
+		background: url(../img/error.png) no-repeat left center;
+	}
+	
+	.Validform_loading {
+		padding-left: 20px;
+		background: url(../img/onLoad.gif) no-repeat left center;
+	}
+	
+	.Validform_error {
+		background-color: #ffe7e7;
+	}
+	
+	#Validform_msg {
+		color: #7d8289;
+		font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+		width: 280px;
+		-webkit-box-shadow: 2px 2px 3px #aaa;
+		-moz-box-shadow: 2px 2px 3px #aaa;
+		background: #fff;
+		position: absolute;
+		top: 0px;
+		right: 50px;
+		z-index: 99999;
+		display: none;
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+	}
+	
+	#Validform_msg .iframe {
+		position: absolute;
+		left: 0px;
+		top: -1px;
+		z-index: -1;
+	}
+	
+	#Validform_msg .Validform_title {
+		line-height: 25px;
+		height: 25px;
+		text-align: left;
+		font-weight: bold;
+		padding: 0 8px;
+		color: #fff;
+		position: relative;
+		background-color: #000;
+	}
+	
+	#Validform_msg a.Validform_close:link,
+	#Validform_msg a.Validform_close:visited {
+		line-height: 22px;
+		position: absolute;
+		right: 8px;
+		top: 0px;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	#Validform_msg a.Validform_close:hover {
+		color: #cc0;
+	}
+	
+	#Validform_msg .Validform_info {
+		padding: 8px;
+		border: 1px solid #000;
+		border-top: none;
+		text-align: left;
+		}

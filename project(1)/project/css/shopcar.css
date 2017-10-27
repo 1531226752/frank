@@ -1,0 +1,275 @@
+.container {
+	width: 1090px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.shopcar {
+	width: 1090px;
+	border: 1px solid #ddd;
+}
+
+.like {}
+
+.img {
+	text-align: center;
+}
+
+.img_1 {
+	text-align: center;
+}
+
+.img_2 {
+	margin-top: 15px;
+	font-size: 18px;
+	color: black;
+}
+
+.sign {
+	color: #fff;
+	margin-right: 18px;
+	border: 2px solid #b4a078;
+	background-color: #b4a078;
+	height: 40px;
+	width: 100px;
+	font-size: 16px;
+	line-height: 38px;
+	border-radius: 2px;
+	padding: 10px 25px;
+}
+
+.continue {
+	color: #b4a078;
+	border: 1px solid #b4a078;
+	background-color: #f5f3ef;
+	height: 40px;
+	width: 100px;
+	font-size: 16px;
+	line-height: 38px;
+	border-radius: 2px;
+	padding: 10px 20px;
+}
+
+.all {
+	margin-top: 20px;
+}
+
+.like {
+	overflow: hidden;
+	margin-top: 40px;
+	border: 1px solid #ddd;
+	width: 1088px;
+	height: 350px;
+}
+
+.like_top {
+	background-color: #f5f5f5;
+	width: 1090px;
+	padding-left: 22px;
+	line-height: 44px;
+	font-size: 17px;
+	height: 44px;
+	color: black;
+}
+
+.pic {
+	margin: 10px 20px 10px 30px;
+}
+
+.introduce_1 {
+	background-color: #b4a078;
+	width: 25px;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+.col {
+	color: black;
+}
+
+.sale {
+	color: red;
+}
+
+.introduce_2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sale {
+	margin-bottom: 30px;
+}
+
+.list {
+	width: 1920px;
+	height: 282px;
+	position: absolute;
+	left: 0px;
+}
+
+.pic_r {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	right: 0;
+}
+
+.pic_l {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	left: :20px;
+	margin-right: 40px;
+}
+
+.introduce_2 a:hover {
+	color: #b4a078;
+}
+
+.like img:hover {
+	color: #898989;
+}
+
+.love {
+	height: 413px;
+	border: 0;
+	width: 100%;
+}
+
+.shopping {
+	background-color: #f5f5f5;
+}
+
+.shopping_zero {
+	color: #000000;
+	margin-left: 10px;
+	padding: 10px 0 10px 0;
+}
+
+.shopping_one,
+.shopping_three,
+.shopping_four,
+.shopping_five {
+	color: #000000;
+	margin-left: 100px;
+	padding: 10px 0 10px 0;
+}
+
+.shopping_two {
+	color: #000000;
+	margin-left: 300px;
+	padding: 10px 0 10px 0;
+}
+
+.shopping_one1 {
+	margin-left: 10px;
+}
+
+.shopp_img {
+	display: block;
+}
+
+.shopp_txt {
+	display: block;
+	color: #000000;
+	padding-top: 20px;
+}
+
+.shopping_two1 {
+	color: #000000;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.shuliang,
+.shuliang_two {
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	border: 1px solid #898989;
+}
+
+.shuliang_one {
+	width: 58px;
+	height: 24px;
+	border: 1px solid #898989;
+}
+
+.shopping_three1 {
+	margin-top: 15px;
+	margin-left: 60px;
+}
+
+.shopping_four1 {
+	color: red;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.shopping_five1 {
+	margin-left: 90px;
+	margin-top: 20px;
+	color: #000000;
+}
+
+.shop_bottom {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	background-color: #f5f5f5;
+}
+
+.bot_one {
+	color: #000000;
+	margin-left: 10px;
+	padding: 10px 0;
+}
+
+.bot_two,
+.bot_three {
+	color: #000000;
+	margin-left: 60px;
+	padding: 10px 0;
+}
+
+.bot_four {
+	color: #000000;
+	margin-left: 100px;
+	padding: 10px 0;
+}
+
+.bot_five {
+	color: #000000;
+	margin-left: 50px;
+	padding: 10px 0;
+}
+
+.apl {
+	width: 60px;
+	height: 35px;
+	background-color: #b4a078;
+	color: white;
+	position: absolute;
+	text-align: center;
+	line-height: 35px;
+	right: 0;
+	top: 0;
+}
