@@ -1,0 +1,185 @@
+@charset "utf-8";
+.trans {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.transf {
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+.atlas_container{
+	margin: 0 auto;
+	width: 1150px;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix :after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+.relative {
+	position: relative;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	background: transparent;
+	z-index: 99;
+	width: 100%;
+}
+
+.header a {
+	outline: none;
+}
+
+.nav {
+	padding-right: 40px;
+}
+
+.nav .nav_1 a {
+	display: block;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+.choose {
+	position: absolute;
+	top: 100%;
+	left: -17px;
+}
+
+.nav .nav_1 .choose li a {
+	display: block;
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #bbb9b9;
+	background: #212121;
+	text-align: center;
+	/*border-bottom: ;*/
+}
+
+.choose li {
+	width: 140px;
+	border-bottom: 1px solid #333;
+}
+
+.nav_1 a:after {
+	content: "";
+	height: 1px;
+	width: 0;
+	background-color: #a8a8a8;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	display: block;
+	transition: all 0.5s;
+}
+
+.nav_1 a:hover::after {
+	left: 0%;
+	width: 100%;
+}
+
+
+/*.logo_food {
+	width: 100%;
+	margin: 0 auto;
+}*/
+
+.bg_1 {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.logo_food .dish {
+	font-family: "微软雅黑";
+	color: #fff;
+	font-size: 26px;
+}
+
+.logo_food .dish2 {
+	font-family: "times new roman";
+	margin-top: 5px;
+	color: #B4B4B4;
+	font-size: 16px;
+}
+.atlas_p{
+	font-size: 14px;
+    line-height: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.atlas_count{
+	border-bottom: 1px dashed#3c3c3c;
+	border-top:1px dashed#3c3c3c;
+	margin-bottom: 45px;
+}
+.atlas_count_1{
+	font-family: HELVETICANEUELTPRO-THEX, chicago;
+    font-size: 34px;
+    line-height: 24px;
+    text-align: center;
+    padding-top:20px ;
+}
+.atlas_count_2{
+	    font-size: 15px;
+	    text-align: center;
+	    padding-bottom: 25px;
+}
+.atlas_line{
+	width:1px ;
+	height:70px ;
+	background: #3c3c3c;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.zms_text{
+	font-size: 16px;
+	padding: 23px 0;
+	color:white;
+	
+}
+.zms_infor{
+	font-size: 15px;
+	padding-bottom: 23px;
+}
+.tps_0{
+	font-size: 16px;
+	padding: 23px 0;
+	color:white;
+}
+.atlas_picture{
+	margin-bottom: 100px;
+}

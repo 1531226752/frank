@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/introduce.css" />
+		<link rel="stylesheet" type="text/css" href="css/animaate.min.css" />
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<a href="#dowebok" class="fl" style="padding-left: 40px;display: block;padding-top: 10px;">
+				<img src="img/logo.png" width="130" height="40" />
+			</a>
+			<div class="nav fr">
+				<ul class="clearfix">
+					<li class="nav_1 fl relative">
+						<a href="index.html">
+							首页
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="dish.html">
+							菜品
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="#" style="border-bottom: 1px solid #a8a8a8;">
+							关于
+						</a>
+						<ul class="choose" style="display: none;">
+							<li class="ss">
+								<a href="about.html">
+									<span class="fl" style="padding-left: 20px;">关于</span><span class="fr rr" style="display: none;"> > </span>
+									<div class="clear">
+									</div>
+								</a>
+							</li>
+							<li class="ss">
+								<a href="team.html">
+									<span class="fl" style="padding-left: 20px;">团队</span><span class="fr rr" style="display: none;"> > </span>
+									<div class="clear">
+
+									</div>
+								</a>
+							</li>
+							<li class="ss">
+								<a href="news.html">
+									<span class="fl" style="padding-left: 20px;">新闻</span><span class="fr rr" style="display: none;"> > </span>
+									<div class="clear">
+
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="atlas.html">
+							图册
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="service.html">
+							服务
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="link.html">
+							联系
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+		<!--人物介绍-->
+		<div class="information1 ">
+			<div class="inf_p fl wow fadeInLeft">
+				<img src="img/a1.jpg" width="408" height="257" />
+			</div>
+			<div class="inf_r fl wow fadeInRight">
+				<ul>
+					<li class="name">王嘉尔 / Joseph</li>
+					<li class="job">运营总监/PM</li>
+					<li class="i1">首席执行官</li>
+					<li class="i2">- 站主机电脑桌面壁纸酷西布曲明家具设计活动设计评审</li>
+					<li class="i3">- 2014-2015 中国网页设计联盟设计小组</li>
+					<li class="a1">出版</li>
+					<li class="a2">- PS图象处理软件的一个创意书籍，高级设计师和高级设计师.</li>
+					<li class="share">分享</li>
+					<li class="share1">- 受邀飞信设计指导讲座</li>
+					<li class="share2">- 受邀请到嘎嘎视频社区设计指导讲座</li>
+					<li class="share3">- 应邀参加创意研讨会，设计并指导讲座</li>
+					<li class="lecture">讲座</li>
+					<li class="lecture2">Zeng Frasers的网页设计师，高级讲师</li>
+					<li class="lecture3">其他</li>
+
+				</ul>
+			</div>
+			<div class="clear">
+
+			</div>
+		</div>
+
+	</body>
+	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var wow = new WOW({
+			boxClass: 'wow',
+			animateClass: 'animated',
+			offset: 0,
+			mobile: true,
+			live: true
+		});
+		wow.init();
+	</script>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//关于
+			$(".nav_1").hover(function() {
+				$(this).find(".choose").css("display", "block");
+			}, function() {
+				$(this).find(".choose").css("display", "none");
+			})
+			$(".nav .choose .ss a").hover(function() {
+				$(this).css("background-color", "#1d1d1d");
+				$(this).find(".rr").css("display", "block")
+			}, function() {
+				$(this).css("background-color", "#212121");
+				$(this).find(".rr").css("display", "none")
+
+			})
+		})
+	</script>
+
+</html>

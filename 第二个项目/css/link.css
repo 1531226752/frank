@@ -1,0 +1,165 @@
+@charset "utf-8";
+.trans {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.transf {
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix :after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+.relative {
+	position: relative;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	background: transparent;
+	z-index: 99;
+	width: 100%;
+}
+
+.header a {
+	outline: none;
+}
+
+.nav {
+	padding-right: 40px;
+}
+
+.nav .nav_1 a {
+	display: block;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+.choose {
+	position: absolute;
+	top: 100%;
+	left: -17px;
+}
+
+.nav .nav_1 .choose li a {
+	display: block;
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #bbb9b9;
+	background: #212121;
+	text-align: center;
+	/*border-bottom: ;*/
+}
+
+.choose li {
+	width: 140px;
+	border-bottom: 1px solid #333;
+}
+
+.nav_1 a:after {
+	content: "";
+	height: 1px;
+	width: 0;
+	background-color: #a8a8a8;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	display: block;
+	transition: all 0.5s;
+}
+
+.nav_1 a:hover::after {
+	left: 0%;
+	width: 100%;
+}
+
+.bg_1 {
+	text-align: center;
+	margin-top: 6%;
+}
+
+.logo_food .dish {
+	font-family: "微软雅黑";
+	color: #fff;
+	font-size: 26px;
+}
+
+.logo_food .dish2 {
+	font-family: "times new roman";
+	margin-top: 5px;
+	color: #B4B4B4;
+	font-size: 16px;
+}
+
+.bg {
+	background-image: url(../img/bgb.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto;
+	background-attachment: fixed;
+	height: 383px;
+}
+
+.page {
+	padding-top: 30px;
+}
+
+.page p {
+	text-align: center;
+	font-size: 13px;
+	color: #6a6a6a;
+	padding: 4px;
+}
+
+.link_search {
+	color: #b3b3b3;
+	padding-left: 300px;
+	padding-right: 300px;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.search_title {
+	font-size: 15px;
+	padding-bottom: 20px;
+	
+}
+
+.tel {
+	font-size: 14px;
+	padding-bottom:5px;
+}

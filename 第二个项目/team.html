@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/team.css" />
+		<link rel="stylesheet" type="text/css" href="css/animaate.min.css"/>
+	</head>
+
+	<body>
+		<div class="header clearfix">
+			<a href="#dowebok" class="fl" style="padding-left: 40px;display: block;padding-top: 10px;">
+				<img src="img/logo.png" width="130" height="40" />
+			</a>
+			<div class="nav fr">
+				<ul class="clearfix">
+					<li class="nav_1 fl relative">
+						<a href="index.html">
+							首页
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="dish.html">
+							菜品
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="#" style="border-bottom: 1px solid #a8a8a8;">
+							关于
+						</a>
+						<ul class="choose" style="display: none;">
+							<li class="ss">
+								<a href="about.html">
+									<span class="fl" style="padding-left: 20px;">关于</span><span class="fr rr" style="display: none;"> > </span>
+									<div class="clear">
+									</div>
+								</a>
+							</li>
+							<li class="ss">
+								<a href="#">
+									<span class="fl" style="padding-left: 20px;">团队</span><span class="fr rr" style="display: none;"> > </span>
+									<div class="clear">
+
+									</div>
+								</a>
+							</li>
+							<li class="ss">
+								<a href="news.html">
+									<span class="fl" style="padding-left: 20px;">新闻</span><span class="fr rr" style="display: none;"> > </span>
+									<div class="clear">
+
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="atlas.html">
+							图册
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="service.html">
+							服务
+						</a>
+					</li>
+					<li class="nav_1 fl relative">
+						<a href="link.html">
+							联系
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+		<div class="bg">
+
+		</div>
+		<div class="bg_1">
+			<div class="logo_food">
+				<div class="dish">
+					团队
+				</div>
+				<div class="dish2">
+					Team
+				</div>
+			</div>
+		</div>
+		<!--人物-->
+		<ul class="team0 clearfix">
+			<li class="team1 relative fl trans" style="margin-left: 180px;">
+				<a href="introduce.html">
+					<dl>
+
+						<dd class="men1">
+							<img src="img/1466157259682.jpg" width="310" height="310" />
+						</dd>
+						<dd class="meen2">
+							<div class="men2 trans">
+								+
+							</div>
+						</dd>
+						<dd class="men3">
+							王嘉尔 / Joseph
+						</dd>
+						<dd class="men4">运营总监/PM</dd>
+						<dd class="men5">
+							7年互联网经验，曾服务于搜狐火炬传递、北京建筑设计研究院 、日本电通等大型客户 ,对设计品质有执着追求 ...
+						</dd>
+					</dl>
+				</a>
+			</li>
+			<li class="team1 relative fl trans">
+				<a href="introduce2.html">
+					<dl>
+
+						<dd class="men1">
+							<img src="img/1466157484713.jpg" width="310" height="310" />
+						</dd>
+						<dd class="meen2">
+							<div class="men2 trans">
+								+
+							</div>
+						</dd>
+						<dd class="men3">
+							陆远 / Aaron
+						</dd>
+						<dd class="men4">米其林三星主厨</dd>
+						<dd class="men5">
+							2012、世界上最权威的awwwards入选365全球最佳CSS的网站，通过层层筛选的国际评估，优秀的艺术客体（uelike）
+						</dd>
+					</dl>
+				</a>
+			</li>
+			<li class="team1 relative fl trans">
+				<a href="introduce3.html">
+					<dl>
+
+						<dd class="men1">
+							<img src="img/1466157601281.jpg" width="310" height="310" />
+						</dd>
+						<dd class="meen2">
+							<div class="men2 trans">
+								+
+							</div>
+						</dd>
+						<dd class="men3">
+							江莱 / Maggie
+						</dd>
+						<dd class="men4">市场总监</dd>
+						<dd class="men5">
+							世界领先的电子设计杂志newwebpick推荐电子杂志设计师（第二十九）中国的设计行业青年奖授予
+						</dd>
+					</dl>
+				</a>
+			</li>
+
+		</ul>
+
+	</body>
+	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var wow = new WOW({
+			boxClass: 'wow',
+			animateClass: 'animated',
+			offset: 0,
+			mobile: true,
+			live: true
+		});
+		wow.init();
+	</script>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//关于
+			$(".nav_1").hover(function() {
+				$(this).find(".choose").css("display", "block");
+			}, function() {
+				$(this).find(".choose").css("display", "none");
+			})
+			$(".nav .choose .ss a").hover(function() {
+				$(this).css("background-color", "#1d1d1d");
+				$(this).find(".rr").css("display", "block")
+			}, function() {
+				$(this).css("background-color", "#212121");
+				$(this).find(".rr").css("display", "none")
+
+			})
+		})
+	</script>
+
+</html>
