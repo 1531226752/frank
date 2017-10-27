@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/*trans函数*/
+
+.trans3 {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.trans5 {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+
+/*fix栏字体变色*/
+
+.navg span a:hover {
+	font-size: 15px;
+	color: #333;
+}
+
+
+/*第二页*/
+.foodkinds .content li:hover .pic img {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	z-index: 1;
+}
+.foodkinds li:hover .addbyme{
+	top: 58px;
+	opacity: 1;
+}
+.foodkinds li:hover .line {
+	width: 270px;
+}
+/*第三页*/
+
+.service li:hover img {
+	opacity: 1;
+	padding-top: 40px;
+}
+.service li:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.service li:hover .num {
+	-webkit-transform: scale(3.0);
+	-moz-transform: scale(3.0);
+	-ms-transform: scale(3.0);
+	-o-transform: scale(3.0);
+	transform: scale(3.0);
+	top: -10px;
+}
+.news .p3:hover{
+	background-color: #fff;
+}
+.news img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/*第六页*/
+.team .person1:hover .arrows_rb {
+	color: #bebebe;
+	padding-left: 50px;
+	
+}
+.team .person1:hover img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.team .person1:hover {
+	background: #f7f7f7;
+	cursor: pointer;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
+}
+
+/*第七页*/
+.partner .content img:hover {
+	-webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+/*第八页*/
+
+.weibo:hover,
+.qq:hover,
+.weixin:hover {
+	color: white;
+}
+
+#submit:hover {
+	background-color: white;
+	color: #333;
+}
